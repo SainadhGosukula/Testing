@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
     @Autowired
     private Serviceclass serviceclass;
-    @GetMapping("/home")
+    @GetMapping("/")
     public String getHome(){
         return serviceclass.message();
     }
